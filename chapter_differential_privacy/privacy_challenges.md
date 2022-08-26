@@ -10,11 +10,11 @@ What happened? Netflix did everything a responsible company would do to anonymiz
 ## Aggregate statistics can be used to identify individuals.
 
 It turns out that your privacy is under fire even if the raw data (anonymized or not) is not released publically. The privacy risk remains even if only aggregate statistics are revealed. Consider the following two database queries:
-* ```sql
+> ```sql
 SELECT COUNT(*) FROM employees 
 WHERE salary > 200000;
 ```
-*
+>
 ```sql
 SELECT COUNT(*) FROM employees
 WHERE salary > 200000 AND name != 'yu-xiang wang';
